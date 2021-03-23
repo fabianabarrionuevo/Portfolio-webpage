@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Fabiana Barrionuevo</title>
 </head>
 <body>
     <nav id="navbar">
         <ul class="nav-list">
-            <li><a href="#welcome-section">about<hr></a></li>
-            <li><a href="#projects">work<hr></a></li>
-            <li><a href="#contact">contact<hr></a></li>
+            <li><a href="#welcome">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
-    <section id="welcome-section" class="welcome-section">
+    <section id="welcome" class="welcome-section">
+        <div class="name">
+            <h1>Fabiana <br> Barrionuevo</h1>
+            <h3>Desarrolladora Front-end</h3>
+        </div>
+    </section>
+    <section id="about" class="about-section">
         <div class="foto-perfil">
-            <img src="./images/Foto perfil(1).jpg" alt="Foto de Perfil">
+            <img src="./images/Foto perfil(1).jpg" alt="foto-de-perfil">
         </div>
         <div class="description">
-            <h1>Fabiana <br> Barrionuevo</h1>
-            <h3>Front-end Developer</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam voluptatem tempora consequuntur rem temporibus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, pariatur.</p>
         </div>
     </section>
 
     <section id="projects" class="projects-section">
-        <h2>These are some of my projects</h2>
+        <h2>Algunos de mis proyectos</h2>
         <div class="projects-grid">
             <a class="project-tile" href="https://codepen.io/Fabibarrionuevo/pen/KKgYoRW" target="_blank">
                 <img src="./images/FireShot Capture 016 - CodePen - Tribute Page - cdpn.io.png"  alt="project">
@@ -89,21 +96,53 @@
         
         
     </section>
+    <section id="skills" class="skills-section">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="skills-cart">
+                <ul class="actuales">
+                    <h4>Actuales</h4>
+                    <li><i class="fab fa-html5"></i>HTML5</li>
+                    <li><i class="fab fa-css3-alt"></i>CSS3</li>
+                    <li><i class="fab fa-js"></i>JavaScript</li>
+                    <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
+                    <li><i class="fab fa-php"></i>PHP</li>
+                </ul>
+            </div>  
+            <div class="skills-cart">
+                <ul class="en-progreso">
+                    <h4>En progreso...</h4>
+                    <li><i class="fab fa-react"></i>React.js</li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="skills-cart">
+                <ul class="proximas">
+                    <h4>Quiero aprender...</h4>
+                    <li><i class="fab fa-sass"></i>Sass</li>
+                    <li><i class="fab fa-node-js"></i>NodeJs</li>
+                    <li><i class="fab fa-angular"></i>Angular</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="contact-section">
-        <h2>Let's work together...</h2>
-        <ul class="contact-list">
-            <li><a class="btn contact-details" id="profile-link" href="https://github.com/fabianabarrionuevo" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-            <li><a class="btn contact-details" id="profile-link-fcc" href="https://www.freecodecamp.org/fabibarrionuevo" target="_blank"><i class="fab fa-free-code-camp"></i>freeCodeCamp</a></li>
-            <li><a class="btn contact-details" id="profile-link-codePen" href="https://codepen.io/Fabibarrionuevo" target="_blank">CodePen</a></li>
-            <li><a class="btn contact-details" href="mailto:fabibarrionuevo1@gmail.com"><i class="fas fa-at"></i> fabibarrionuevo1@gmail.com</a></li>
-            <li><a class="btn contact-details" href="tel:+5493516146947"><i class="fas fa-mobile-alt"></i> + 54 9 351 614 6947</a></li>
-        </ul>
+        <div class="contact-container">
+            <h2>Trabajemos juntos</h2>
+            <ul class="contact-list">
+                <li><a class="btn contact-details" id="profile-link" href="https://github.com/fabianabarrionuevo" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+                <li><a class="btn contact-details" id="profile-link-fcc" href="https://www.freecodecamp.org/fabibarrionuevo" target="_blank"><i class="fab fa-free-code-camp"></i>freeCodeCamp</a></li>
+                <li><a class="btn contact-details" id="profile-link-codePen" href="https://codepen.io/Fabibarrionuevo" target="_blank"><i class="fab fa-codepen"></i>CodePen</a></li>
+                <li><a class="btn contact-details" href="mailto:fabibarrionuevo1@gmail.com"><i class="fas fa-at"></i> fabibarrionuevo1@gmail.com</a></li>
+                <li><a class="btn contact-details" href="tel:+5493516146947"><i class="fas fa-mobile-alt"></i> + 54 9 351 614 6947</a></li>
+            </ul>
+        </div>  
     </section>
 
     <footer>
-        <p>Made by FabianaBarrionuevo</p>
-
+        <p>Desarrollado por Fabiana Barrionuevo @2021</p>
     </footer>
 </body>
 </html>
