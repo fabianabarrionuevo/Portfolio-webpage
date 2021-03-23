@@ -95,13 +95,13 @@ li {
     height: 100vh;
     text-align: initial; 
     background-color: var(--color-white);
-    
+  
   }
 
 .name {
   position: absolute;
   top: 35%;
-  right: 17%
+  right: 12%
 }
 
 h1 {
@@ -113,11 +113,23 @@ h1 {
     background-color: var(--color-purple);
     border: solid 1px;
     border-color: var(--color-dark);
+    padding-bottom: 20px;
 }
 
 h3 {
   margin: 0;
-    padding-left: 50px;
+  margin-left: 50px;
+  background-color: var(--color-white);
+  z-index: 1;
+  position: relative;
+  top: -11px;
+  left: 10px;
+  border: 1px solid;
+  padding: 10px 5px;
+}
+
+.fa-mug-hot {
+  padding: 0 5px;
 }
 
 /* About section */
