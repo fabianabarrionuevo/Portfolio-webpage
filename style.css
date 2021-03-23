@@ -27,35 +27,64 @@ li {
 
 /* Nav section */
 #navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-image: linear-gradient(180deg
-, rgb(245, 237, 237) 20%, rgba(245, 245, 245, 0.1) 100%);
+  background-color: var(--color-blue);
+  width: 100%;
+  position: fixed;
+  z-index: 50;
 }
 
 .nav-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-list li {
-    font-weight: 900;
-    font-size: 13px;
+/* The sidepanel menu */
+.sidepanel {
+  height: 100vh; 
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; 
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: var(--color-blue); 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
-.nav-list a {
-    display: block;
-    padding: 12px 9px;
-    letter-spacing: 1px;
-    color: var(--color-dark);
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--color-white);
+  display: block;
+  transition: 0.3s;
 }
 
-.nav-list a:hover{
-    color: var(--color-purple);
-    
+.sidepanel a:hover {
+  color: #f1f1f1;
 }
+
+/* Position and style the close button*/
+.sidepanel .closebtn {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  padding-left: 18px;
+  font-size: 25px;
+}
+
+/* Style the open button*/
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: var(--color-blue);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
 
 /* Welcome section */
 

@@ -13,13 +13,19 @@
 <body>
     <nav id="navbar">
         <ul class="nav-list">
-            <li><a href="#welcome">Inicio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <div id="mySidepanel" class="sidepanel">
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></li>
+                <li><a href="#welcome" onclick="closeNav()">Inicio</a></li>
+                <li><a href="#about" onclick="closeNav()">Sobre mí</a></li>
+                <li><a href="#projects" onclick="closeNav()">Proyectos</a></li>
+                <li><a href="#skills" onclick="closeNav()">Habilidades</a></li>
+                <li><a href="#contact" onclick="closeNav()">Contacto</a></li>
+            </div>
+            <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
         </ul>
     </nav>
+    
+
     <section id="welcome" class="welcome-section">
         <div class="name">
             <h1>Fabiana <br> Barrionuevo</h1>
@@ -145,4 +151,5 @@
         <p>Desarrollado por Fabiana Barrionuevo @2021</p>
     </footer>
 </body>
+<script src="app.js"></script>
 </html>
