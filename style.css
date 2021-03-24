@@ -95,7 +95,6 @@ li {
     height: 100vh;
     text-align: initial; 
     background-color: var(--color-white);
-  
   }
 
 .name {
@@ -330,6 +329,102 @@ img {
   }
   
 
-  @media (min-width: 1024) {
+  @media (min-width: 768px) {
+    .name {
+      position: absolute;
+      top: 35%;
+      right: 30%
+    }
     
+    .sidepanel {
+    background-image: linear-gradient(90deg, #10162f, #10162f87);
+    background-color: transparent;
+    }
+
+    .projects-section h2{
+      margin: 35px 80px;
+    }
+
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(318px, 1fr));
+    }
+
+    .skills-section h2 {
+      margin: 35px 150px;
+    }
+
+    .skills-cart {
+      margin: 10px 60px;
+    }
+    .contact-container {
+      padding: 25px 0px 50px;
+    }
+    .contact-container h2 {
+      margin: 50px 0px;
+    }
+
   }
+
+  @media (min-width: 1024px) {
+    /* Nav section */
+    #navbar {
+      height: 70px;
+    }
+    .nav-list {
+      padding:10px;
+    }
+
+    /* The sidepanel menu */
+    .openbtn, .sidepanel .closebtn {
+      font-size: 30px;
+    }
+    .sidepanel .closebtn {
+      top: 15px;
+      left: 8px;
+    }
+    .sidepanel li {
+      padding: 15px 0px;
+    }
+    /* Welcome section */
+    .name {
+      width: 474px;
+      right: 35%;
+    }
+    .name h1 {
+      font-size: 3em;
+    }
+    .name h3 {
+      font-size: 22px;
+    }
+    
+    /* About section */
+    .about-section {
+      flex-direction: row;
+      padding:50px;
+    }
+    .foto-perfil img {
+      width: 280px;
+      height: 320px;
+    }
+    .description {
+      margin: 80px 10px 20px;
+    }
+
+    /* Porjects section */
+
+    .projects-section {
+      padding-top: 70px;
+    }
+
+    .projects-section h2, .skills-section h2 {
+      margin: 35px 25%;
+    }
+
+      /* Skills section */
+
+      .skills-cart {
+        margin: 30px 17%;
+      }
+
+  }
+
