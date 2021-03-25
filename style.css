@@ -63,7 +63,8 @@ li {
 }
 
 .sidepanel a:hover {
-  color: #f1f1f1;
+  font-weight: 600;
+  font-size: 27px;
 }
 
 /* Position and style the close button*/
@@ -115,10 +116,12 @@ h1 {
     padding-bottom: 20px;
 }
 
+
 h3 {
   margin: 0;
   margin-left: 50px;
   background-color: var(--color-white);
+  box-shadow: -10px 10px 0px var(--color-dark);
   z-index: 1;
   position: relative;
   top: -11px;
@@ -148,6 +151,7 @@ h3 {
   height: 255px;
   border: solid 1px;
   padding: 3px;
+  box-shadow: 0px 8px 10px rgb(0 0 0 / 50%);
 }
 
 .description {
@@ -156,6 +160,8 @@ h3 {
   margin: 0px 15px 20px;
 }
 .description h3 {
+  color: var(--color-purple);
+  border-color: black;
   width: fit-content;
   position: relative;
   left: 20px;
@@ -211,8 +217,8 @@ img {
   }
 
   .project:hover .code {
-    color: var(--main-green);
-    font-weight: 400;
+    color: var(--color-yellow);
+    font-weight: 600;
   }
 
   .project {
@@ -440,11 +446,17 @@ img {
     }
 
     .projects-section h2, .skills-section h2 {
-      margin: 35px 25%;
+      margin: 20px 25%;
+    }
+    .project:hover .code {
+      color: var(--color-yellow);
+      font-weight: 600;
     }
 
       /* Skills section */
-
+      .skills-section {
+        padding: 50px 10px;
+      }
       .skills-cart {
         margin: 30px 17%;
       }
