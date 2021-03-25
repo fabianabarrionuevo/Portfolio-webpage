@@ -133,7 +133,6 @@ h3 {
 
 /* About section */
 .about-section {
-  height: 100vh;
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -141,7 +140,7 @@ h3 {
 .foto-perfil {
   display: flex;
   justify-content: center;
-  margin: 80px 10px 20px;
+  margin: 70px 10px 20px;
 }
 
 .foto-perfil img {
@@ -151,8 +150,21 @@ h3 {
   padding: 3px;
 }
 
+.description {
+  border: solid 1px;
+  height: fit-content;
+  margin: 0px 15px 20px;
+}
+.description h3 {
+  width: fit-content;
+  position: relative;
+  left: 20px;
+ 
+}
 .description p {
-  text-align: center;
+  text-align: initial;
+  margin: 0;
+  padding: 7px 15px;
 }
 
 /* Projects section */
@@ -399,6 +411,7 @@ img {
     
     /* About section */
     .about-section {
+      height: 100vh;
       flex-direction: row;
       padding:50px;
     }
@@ -408,7 +421,17 @@ img {
     }
     .description {
       margin: 80px 10px 20px;
+      border: solid 1px;
+      height: fit-content;
+    
     }
+
+    .description p {
+      text-align: initial;
+      margin: 0;
+      padding: 10px;
+    }
+    
 
     /* Porjects section */
 
