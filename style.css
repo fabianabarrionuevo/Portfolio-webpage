@@ -87,9 +87,8 @@ li {
 }
 
 /*go to top button */
-html {
-  scroll-behavior: smooth;
-}
+
+
 #myButton{
   display: none; /* Hidden by default */
   position: fixed;
