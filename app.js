@@ -9,7 +9,7 @@ function openNav() {
   }
 
 
-/*Go to top function */
+/*On scroll button */
 
 mybutton = document.getElementById("#myButton");
 
