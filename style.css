@@ -295,13 +295,16 @@ img {
 
   }
   .skills-cart h4 {
-    margin: 0 0 10px;
+    margin:10px 0;
     padding-left: 16px;
   }
 
   .skills-cart ul {
     overflow: hidden;
     padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .skills-cart li {
@@ -312,6 +315,11 @@ img {
 
   .fab {
     padding-right: 5px;
+  }
+
+  .skills-container .fas{
+    font-size: 0.7rem;
+    padding-right: 3px;
   }
   
   /* Contact section */
