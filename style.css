@@ -145,6 +145,7 @@ h1 {
     border: solid 1px;
     border-color: var(--color-dark);
     padding-bottom: 20px;
+    position: relative;
 }
 
 
@@ -152,13 +153,17 @@ h3 {
   margin: 0;
   margin-left: 50px;
   background-color: var(--color-white);
-  box-shadow: -10px 10px 0px var(--color-dark);
+  /* box-shadow: -10px 10px 0px var(--color-dark); */
   z-index: 1;
   position: relative;
-  top: -11px;
+  /* top: -11px; */
   left: 10px;
   border: 1px solid;
   padding: 10px 5px;
+}
+.name:hover h1, .name:hover h3, .description:hover h3{
+  box-shadow: -10px 10px 0px var(--color-dark);
+  top: -11px;
 }
 
 .fa-mug-hot {
@@ -196,12 +201,12 @@ h3 {
   width: fit-content;
   position: relative;
   left: 20px;
- 
 }
 .description p {
   text-align: initial;
   margin: 0;
   padding: 7px 15px;
+  line-height: 1.2rem;
 }
 
 /* Projects section */
@@ -292,8 +297,14 @@ img {
     margin-bottom: 20px;
     background-color: var(--color-white);
     box-shadow: 0px 1px 8px var(--color-gray);
-
   }
+
+  .skills-cart:hover {
+    box-shadow: -10px 10px 0px var(--color-purple);
+    position: relative;
+    top: -11px;
+  }
+
   .skills-cart h4 {
     margin:10px 0;
     padding-left: 16px;
@@ -366,7 +377,8 @@ img {
   }
 
   .contact-details:hover {
-    transform: translateY(8px);
+    transform: translateX(8px);
+    color: var(--color-green);
   }
 
   footer {
