@@ -303,6 +303,7 @@ img {
   .skills-cart {
     border: solid 2px;
     margin-bottom: 20px;
+    padding-bottom: 8px;
     background-color: var(--color-white);
     box-shadow: 0px 1px 8px var(--color-gray);
   }
@@ -386,6 +387,7 @@ img {
 .contact-details:hover {
   transform: translateX(8px);
   color: var(--color-green);
+  transition: all 0.5s;
 }
 
 footer {
